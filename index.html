@@ -28,7 +28,7 @@
 
       <nav class="site-nav" aria-label="Primary navigation">
         <a class="nav-link" href="#home" data-i18n="nav.home">主页</a>
-        <a class="nav-link" href="#about" data-i18n="nav.about">多维切面</a>
+        <a class="nav-link" href="#about" data-i18n="nav.about">全面探索</a>
         <a class="nav-link" href="#portfolio" data-i18n="nav.portfolio">作品集</a>
         <a class="nav-link" href="#contact" data-i18n="nav.contact">联系我</a>
         <a class="nav-link nav-pill" href="#ask" data-i18n="nav.ask">来问我(AI)</a>
@@ -56,7 +56,7 @@
             从实验室、董事会议室到舞台聚光灯，把复杂问题翻译成动人的行动。
           </p>
           <div class="hero-actions">
-            <a class="primary-cta magnetic-link" href="#about" data-i18n="hero.ctaPrimary">展开多维切面</a>
+            <a class="primary-cta magnetic-link" href="#about" data-i18n="hero.ctaPrimary">进入全面探索</a>
             <a class="ghost-cta magnetic-link" href="#ask" data-i18n="hero.ctaSecondary">问问 AI 分身</a>
           </div>
         </div>
@@ -74,23 +74,30 @@
       <section class="section about-section" id="about">
         <div class="content-shell">
           <div class="section-heading">
-            <p class="eyebrow" data-i18n="about.eyebrow">Four dimensions</p>
-            <h2 data-i18n="about.title">多维切面</h2>
+            <p class="eyebrow" data-i18n="about.eyebrow">Full exploration</p>
+            <h2 data-i18n="about.title">全面探索</h2>
             <p data-i18n="about.description">
               她不是单一标签，而是一组可切换的能力坐标：科研、商业、传播与体验力互相增强。
             </p>
           </div>
 
           <div class="facet-layout">
-            <div class="facet-tabs" role="tablist" aria-label="About facets" data-facet-tabs></div>
+            <div class="facet-tabs" role="tablist" aria-label="Full exploration categories" data-facet-tabs></div>
             <article class="facet-panel glass-panel" data-facet-panel>
-              <div class="panel-icon" data-facet-icon>🧪</div>
-              <p class="panel-kicker" data-facet-kicker>AI Maker in Lab</p>
-              <h3 data-facet-title>实验室里的 AI 创客</h3>
-              <p data-facet-body>
-                NUS生物技术硕士/浸会食品科学一级荣誉；5年实验室经验；自学机器学习并融入感官课题；利用AI优化研究所记录。
-              </p>
-              <ul class="stat-list" data-facet-stats></ul>
+              <div class="facet-panel-copy">
+                <div class="panel-icon" data-facet-icon>🧪</div>
+                <p class="panel-kicker" data-facet-kicker>Research Lab</p>
+                <h3 data-facet-title>科研实验</h3>
+                <p data-facet-body>
+                  NUS生物技术硕士/浸会食品科学一级荣誉；5年实验室经验；自学机器学习并融入感官课题；利用AI优化研究所记录。
+                </p>
+                <ul class="stat-list" data-facet-stats></ul>
+                <button class="facet-detail-link" type="button" data-facet-open>进入界面</button>
+              </div>
+              <figure class="facet-visual">
+                <img data-facet-image alt="" />
+                <figcaption data-facet-caption>可替换为科研实验照片</figcaption>
+              </figure>
             </article>
           </div>
         </div>
@@ -160,6 +167,21 @@
         </div>
       </section>
     </main>
+
+    <div class="explore-detail" data-explore-detail aria-hidden="true" role="dialog" aria-label="Exploration detail">
+      <button class="explore-close" type="button" data-explore-close aria-label="Close exploration">×</button>
+      <section class="explore-stage glass-panel">
+        <figure class="explore-image-wrap">
+          <img data-explore-image alt="" />
+        </figure>
+        <div class="explore-copy">
+          <p class="panel-kicker" data-explore-kicker></p>
+          <h3 data-explore-title></h3>
+          <p data-explore-intro></p>
+          <ul data-explore-bullets></ul>
+        </div>
+      </section>
+    </div>
 
     <div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-label="Portfolio preview">
       <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close preview">×</button>

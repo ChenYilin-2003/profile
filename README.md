@@ -18,3 +18,7 @@ python3 -m http.server 8080
 - 作品集图片/视频：修改 `script.js` 顶部 `media` 对象以及 `copy.zh.portfolio.items` / `copy.en.portfolio.items`。
 - 中英文文案：统一维护在 `script.js` 的 `copy` 字典中。
 - AI 分身接口：`script.js` 的 `getAiResponse()` 已预留 Fetch API 接入位置。
+
+## 全面探索模块
+
+`script.js` 的 `copy.zh.about.facets` / `copy.en.about.facets` 维护“科研实验、市场运营、商业沟通、多维兴趣”四个入口。每个入口都支持独立详情界面、图片、简介和要点列表。

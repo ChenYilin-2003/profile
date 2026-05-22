@@ -8,6 +8,10 @@ const media = {
     "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1400&q=84",
   boardroom:
     "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=84",
+  market:
+    "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=84",
+  communication:
+    "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=84",
   stage:
     "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1400&q=84",
   fitness:
@@ -23,7 +27,7 @@ const copy = {
   zh: {
     nav: {
       home: "主页",
-      about: "多维切面",
+      about: "全面探索",
       portfolio: "作品集",
       contact: "联系我",
       ask: "来问我(AI)",
@@ -32,7 +36,7 @@ const copy = {
       eyebrow: "AI × Science × Storytelling",
       title: "连接科学、商业与传播的跨界创作者：用 AI 探索未来，用故事链接世界。",
       subtitle: "从实验室、董事会议室到舞台聚光灯，把复杂问题翻译成动人的行动。",
-      ctaPrimary: "展开多维切面",
+      ctaPrimary: "进入全面探索",
       ctaSecondary: "问问 AI 分身",
       scroll: "向下探索",
       marquee: [
@@ -43,16 +47,28 @@ const copy = {
       ],
     },
     about: {
-      eyebrow: "Four dimensions",
-      title: "多维切面",
-      description: "她不是单一标签，而是一组可切换的能力坐标：科研、商业、传播与体验力互相增强。",
+      eyebrow: "Full exploration",
+      title: "全面探索",
+      description: "从科研实验、市场运营、商业沟通到多维兴趣，把逸霖的经历拆成四个可以深入进入的界面。",
+      open: "进入界面",
+      imageHint: "点击进入后可替换为真实项目图片",
       facets: [
         {
           icon: "🧪",
-          kicker: "AI Maker in Lab",
-          title: "实验室里的 AI 创客",
-          short: "科研系统力",
+          kicker: "Research Lab",
+          title: "科研实验",
+          short: "实验、数据与AI提效",
+          image: media.science,
+          imageCaption: "科研实验照片位：可替换为实验室、样本、仪器或研究现场",
           body: "NUS生物技术硕士/浸会食品科学一级荣誉；5年实验室经验；自学机器学习并融入感官课题；利用AI优化研究所记录。",
+          detailTitle: "科研实验：把严谨训练变成可复用的研究系统",
+          detailIntro:
+            "这一页适合放实验室高清照片、科研项目截图、论文/海报或AI记录工作流。重点呈现她如何把实验能力、数据意识和AI工具组合起来。",
+          detailBullets: [
+            "NUS生物技术全奖硕士与浸会食品科学一级荣誉背景，具备扎实科研训练。",
+            "5年实验室经验，覆盖实验设计、样本处理、感官研究与研究记录。",
+            "自学机器学习，将AI用于实验记录整理、文献提效和感官课题分析。",
+          ],
           stats: [
             ["5年", "湿实验、感官科学与数据记录经验"],
             ["NUS", "生物技术全奖硕士训练"],
@@ -60,35 +76,65 @@ const copy = {
           ],
         },
         {
-          icon: "💼",
-          kicker: "Policy × Business",
-          title: "懂政策的商业推手",
-          short: "策略转化力",
-          body: "辉瑞中国大湾区医药政策调研与MoU协助；蒙牛品牌营销与零费用KOL合作操盘，能把复杂利益相关方对齐到一张路线图。",
+          icon: "📈",
+          kicker: "Market Growth",
+          title: "市场运营",
+          short: "品牌、内容与增长",
+          image: media.market,
+          imageCaption: "市场运营照片位：可替换为品牌活动、社媒内容、KOL合作截图",
+          body: "在蒙牛品牌营销中参与内容策划与零费用KOL合作操盘，把有限资源转化为可传播的品牌触点。",
+          detailTitle: "市场运营：在资源有限时做出可传播的增长动作",
+          detailIntro:
+            "这一页适合放品牌活动图、Campaign视觉、社媒数据截图、KOL合作内容。重点呈现她如何从用户、内容和渠道拆解增长。",
+          detailBullets: [
+            "参与蒙牛品牌营销项目，理解快消品牌的内容节奏与传播链路。",
+            "推动零费用KOL合作，用资源整合和沟通策略换取真实内容产出。",
+            "能把品牌调性、用户兴趣和平台语言翻译成可执行运营动作。",
+          ],
+          stats: [
+            ["0预算", "撬动KOL内容合作"],
+            ["内容", "从选题到触点的运营思维"],
+            ["品牌", "快消语境下的传播执行"],
+          ],
+        },
+        {
+          icon: "🤝",
+          kicker: "Business Communication",
+          title: "商业沟通",
+          short: "政策、合作与表达",
+          image: media.communication,
+          imageCaption: "商业沟通照片位：可替换为会议、采访、主持或商务活动照片",
+          body: "辉瑞中国大湾区医药政策调研与MoU协助；广东经视全英出镜采编与双语主持经历，让复杂信息更容易被关键对象理解。",
+          detailTitle: "商业沟通：把复杂议题翻译成让人愿意行动的语言",
+          detailIntro:
+            "这一页适合放商务会议、主持现场、采访截图或合作材料视觉。重点呈现她在政策、商业与公众表达之间的转译能力。",
+          detailBullets: [
+            "在辉瑞中国参与大湾区医药政策调研，协助高管推进MoU相关材料。",
+            "广东经视全英出镜采编经验，具备镜头表达与双语信息组织能力。",
+            "曾统筹50+人协会并策划500人规模主持人大赛，兼具组织和现场沟通能力。",
+          ],
           stats: [
             ["MoU", "协助高管推进关键合作材料"],
-            ["0预算", "撬动KOL内容合作"],
-            ["GBA", "医药政策与市场语境洞察"],
-          ],
-        },
-        {
-          icon: "🎤",
-          kicker: "Stage Connector",
-          title: "聚光灯下的连接者",
-          short: "表达组织力",
-          body: "广东经视全英出镜采编；播音协会社长，统筹50+人团队并策划首届500人规模主持人大赛。",
-          stats: [
             ["全英", "电视出镜采编与双语表达"],
-            ["50+", "协会组织与团队统筹"],
-            ["500人", "首届大型主持人大赛策划"],
+            ["500人", "大型活动策划与现场沟通"],
           ],
         },
         {
-          icon: "🏄‍♀️",
-          kicker: "Experience Hunter",
-          title: "不设限的体验派",
-          short: "自我迭代力",
+          icon: "✨",
+          kicker: "Multiverse Interests",
+          title: "多维兴趣",
+          short: "运动、音乐与体验力",
+          image: media.fitness,
+          imageCaption: "多维兴趣照片位：可替换为运动、音乐、旅行或生活方式照片",
           body: "皮划艇、月减20斤的健身狂人、创立全国第一线上唱歌社团、网易云AI音乐人，用真实体验持续拓宽创作边界。",
+          detailTitle: "多维兴趣：把热爱变成可持续的自我迭代",
+          detailIntro:
+            "这一页适合放运动大片、AI音乐封面、社团活动图或生活方式照片。重点呈现她不设限的体验力和内容创造力。",
+          detailBullets: [
+            "为了热爱一个月减掉20斤，体现强目标拆解和执行能力。",
+            "创立全国第一线上唱歌社团，探索兴趣社群的线上组织方式。",
+            "以AI音乐人身份上架网易云，用技术参与音乐与内容创作。",
+          ],
           stats: [
             ["20斤", "一个月极限健身蜕变"],
             ["全国第一", "线上唱歌社团创立者"],
@@ -176,7 +222,7 @@ const copy = {
   en: {
     nav: {
       home: "Home",
-      about: "Dimensions",
+      about: "Explore",
       portfolio: "Portfolio",
       contact: "Contact",
       ask: "Ask Me (AI)",
@@ -185,7 +231,7 @@ const copy = {
       eyebrow: "AI × Science × Storytelling",
       title: "A cross-disciplinary creator connecting science, business, and communication.",
       subtitle: "Exploring the future with AI, and turning complex worlds into stories people can feel.",
-      ctaPrimary: "Explore dimensions",
+      ctaPrimary: "Start exploring",
       ctaSecondary: "Ask my AI twin",
       scroll: "Scroll",
       marquee: [
@@ -196,17 +242,29 @@ const copy = {
       ],
     },
     about: {
-      eyebrow: "Four dimensions",
-      title: "Multidimensional by design",
+      eyebrow: "Full exploration",
+      title: "Full exploration",
       description:
-        "Not a single label, but a switchboard of strengths: research, business, communication, and lived experience reinforcing one another.",
+        "Research lab, market operations, business communication, and multidimensional interests become four image-ready interfaces you can enter one by one.",
+      open: "Enter interface",
+      imageHint: "Replace this with a real project image later",
       facets: [
         {
           icon: "🧪",
-          kicker: "AI Maker in Lab",
-          title: "The AI maker inside the lab",
-          short: "Research systems",
+          kicker: "Research Lab",
+          title: "Research Lab",
+          short: "Experiments, data, and AI leverage",
+          image: media.science,
+          imageCaption: "Research image slot: lab, samples, instruments, or fieldwork",
           body: "NUS biotechnology master with a full scholarship and first-class food science training at HKBU; five years of lab experience; self-taught machine learning applied to sensory research and AI-enhanced institute records.",
+          detailTitle: "Research Lab: turning rigorous training into reusable research systems",
+          detailIntro:
+            "Use this page for lab photography, research screenshots, posters, papers, or AI-powered record workflows. It shows how she combines experimentation, data awareness, and AI tools.",
+          detailBullets: [
+            "Fully funded NUS biotechnology master's training and first-class food science foundation at HKBU.",
+            "Five years of lab work across experimental design, sample handling, sensory research, and records.",
+            "Self-taught machine learning applied to research documentation, literature efficiency, and sensory analysis.",
+          ],
           stats: [
             ["5 yrs", "Wet lab, sensory science, and research records"],
             ["NUS", "Full-scholarship biotechnology training"],
@@ -214,35 +272,65 @@ const copy = {
           ],
         },
         {
-          icon: "💼",
-          kicker: "Policy × Business",
-          title: "A business driver fluent in policy",
-          short: "Strategic translation",
-          body: "Supported Pfizer China Greater Bay Area healthcare policy research and MoU materials; led Mengniu brand marketing moves and zero-budget KOL collaborations.",
+          icon: "📈",
+          kicker: "Market Growth",
+          title: "Market Operations",
+          short: "Brand, content, and growth",
+          image: media.market,
+          imageCaption: "Market image slot: brand events, social content, or KOL collaboration screenshots",
+          body: "In Mengniu brand marketing, she worked on content planning and zero-budget KOL collaboration, turning limited resources into visible brand touchpoints.",
+          detailTitle: "Market Operations: building spreadable growth with limited resources",
+          detailIntro:
+            "Use this page for campaign visuals, brand activity photos, social data screenshots, or KOL content. It highlights how she breaks growth down through users, content, and channels.",
+          detailBullets: [
+            "Participated in Mengniu brand marketing projects and learned the rhythm of FMCG communication.",
+            "Activated zero-budget KOL cooperation through resource integration and thoughtful outreach.",
+            "Translates brand tone, user interest, and platform language into concrete operating moves.",
+          ],
+          stats: [
+            ["0 budget", "KOL partnership activation"],
+            ["Content", "Operational thinking from topic to touchpoint"],
+            ["Brand", "Execution in FMCG communication contexts"],
+          ],
+        },
+        {
+          icon: "🤝",
+          kicker: "Business Communication",
+          title: "Business Communication",
+          short: "Policy, partnership, and presence",
+          image: media.communication,
+          imageCaption: "Communication image slot: meetings, interviews, hosting, or business events",
+          body: "Supported Pfizer China Greater Bay Area healthcare policy research and MoU materials; English TV reporting and bilingual hosting sharpened her ability to make complex information land.",
+          detailTitle: "Business Communication: translating complexity into language that moves people",
+          detailIntro:
+            "Use this page for meeting photos, hosting shots, interview stills, or collaboration material visuals. It shows her translation ability across policy, business, and public expression.",
+          detailBullets: [
+            "Worked on Pfizer China Greater Bay Area healthcare policy research and MoU-related executive materials.",
+            "Appeared on Guangdong Economic TV as an English reporter/editor with bilingual information design skills.",
+            "Led a 50+ member association and planned a 500-person hosting contest, combining organization and live communication.",
+          ],
           stats: [
             ["MoU", "Executive-level collaboration support"],
-            ["0 budget", "KOL partnership activation"],
-            ["GBA", "Healthcare policy and market insight"],
-          ],
-        },
-        {
-          icon: "🎤",
-          kicker: "Stage Connector",
-          title: "A connector under the spotlight",
-          short: "Communication ops",
-          body: "On-camera English reporter and editor for Guangdong Economic TV; president of the broadcasting association, leading 50+ members and launching a 500-person hosting competition.",
-          stats: [
             ["English", "On-camera reporting and bilingual presence"],
-            ["50+", "Association leadership and team operations"],
-            ["500", "First large-scale hosting contest"],
+            ["500", "Large-scale event planning and communication"],
           ],
         },
         {
-          icon: "🏄‍♀️",
-          kicker: "Experience Hunter",
-          title: "An experience-first boundary breaker",
-          short: "Self iteration",
+          icon: "✨",
+          kicker: "Multiverse Interests",
+          title: "Multidimensional Interests",
+          short: "Sports, music, and lived experience",
+          image: media.fitness,
+          imageCaption: "Interest image slot: sports, music, travel, or lifestyle photography",
           body: "Kayaking, a one-month 20-jin fitness transformation, founder of the first nationwide online singing club, and NetEase Cloud AI musician.",
+          detailTitle: "Multidimensional Interests: turning passion into continuous self-iteration",
+          detailIntro:
+            "Use this page for sports portraits, AI music covers, community photos, or lifestyle images. It presents her boundary-free energy and creative range.",
+          detailBullets: [
+            "Lost 20 jin in one month for something she loved, showing goal breakdown and execution.",
+            "Founded the first nationwide online singing club, exploring online community organization.",
+            "Released AI music on NetEase Cloud, using technology as part of music and content creation.",
+          ],
           stats: [
             ["20 jin", "One-month fitness transformation"],
             ["First", "Nationwide online singing club founder"],
@@ -349,6 +437,7 @@ const selectors = {
   chatForm: document.querySelector("[data-chat-form]"),
   chatInput: document.querySelector("[data-chat-input]"),
   lightbox: document.querySelector("[data-lightbox]"),
+  exploreDetail: document.querySelector("[data-explore-detail]"),
 };
 
 const t = (path) => path.split(".").reduce((acc, key) => acc?.[key], copy[state.lang]);
@@ -376,6 +465,9 @@ function applyLanguage(nextLang = state.lang) {
     renderFacets();
     renderPortfolio();
     resetChat();
+    if (selectors.exploreDetail.classList.contains("is-open")) {
+      renderExploreDetail(state.activeFacet);
+    }
 
     window.setTimeout(() => document.body.classList.remove("is-translating"), 80);
   }, 180);
@@ -423,10 +515,15 @@ function renderFacetPanel(index) {
   selectors.facetPanel.classList.add("is-changing");
 
   window.setTimeout(() => {
+    const image = selectors.facetPanel.querySelector("[data-facet-image]");
     selectors.facetPanel.querySelector("[data-facet-icon]").textContent = facet.icon;
     selectors.facetPanel.querySelector("[data-facet-kicker]").textContent = facet.kicker;
     selectors.facetPanel.querySelector("[data-facet-title]").textContent = facet.title;
     selectors.facetPanel.querySelector("[data-facet-body]").textContent = facet.body;
+    selectors.facetPanel.querySelector("[data-facet-open]").textContent = t("about.open");
+    selectors.facetPanel.querySelector("[data-facet-caption]").textContent = facet.imageCaption || t("about.imageHint");
+    image.src = facet.image;
+    image.alt = facet.title;
     selectors.facetPanel.querySelector("[data-facet-stats]").innerHTML = facet.stats
       .map(([value, label]) => `<li><strong>${value}</strong><span>${label}</span></li>`)
       .join("");
@@ -439,6 +536,30 @@ function renderFacetPanel(index) {
 
     selectors.facetPanel.classList.remove("is-changing");
   }, 180);
+}
+
+function renderExploreDetail(index) {
+  const facet = t("about.facets")[index];
+  const image = selectors.exploreDetail.querySelector("[data-explore-image]");
+  image.src = facet.image;
+  image.alt = facet.title;
+  selectors.exploreDetail.querySelector("[data-explore-kicker]").textContent = facet.kicker;
+  selectors.exploreDetail.querySelector("[data-explore-title]").textContent = facet.detailTitle || facet.title;
+  selectors.exploreDetail.querySelector("[data-explore-intro]").textContent = facet.detailIntro || facet.body;
+  selectors.exploreDetail.querySelector("[data-explore-bullets]").innerHTML = facet.detailBullets
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+}
+
+function openExploreDetail(index = state.activeFacet) {
+  renderExploreDetail(index);
+  selectors.exploreDetail.classList.add("is-open");
+  selectors.exploreDetail.setAttribute("aria-hidden", "false");
+}
+
+function closeExploreDetail() {
+  selectors.exploreDetail.classList.remove("is-open");
+  selectors.exploreDetail.setAttribute("aria-hidden", "true");
 }
 
 function renderPortfolio() {
@@ -568,6 +689,14 @@ function bindEvents() {
     renderFacetPanel(Number(tab.dataset.facetIndex));
   });
 
+  selectors.facetPanel.addEventListener("click", (event) => {
+    if (event.target.closest("[data-facet-open]")) openExploreDetail(state.activeFacet);
+  });
+
+  selectors.exploreDetail.addEventListener("click", (event) => {
+    if (event.target.matches("[data-explore-detail], [data-explore-close]")) closeExploreDetail();
+  });
+
   selectors.portfolioGrid.addEventListener("click", (event) => {
     const card = event.target.closest("[data-portfolio-index]");
     if (!card) return;
@@ -579,7 +708,10 @@ function bindEvents() {
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeLightbox();
+    if (event.key === "Escape") {
+      closeLightbox();
+      closeExploreDetail();
+    }
   });
 
   selectors.chatForm.addEventListener("submit", handleChatSubmit);
