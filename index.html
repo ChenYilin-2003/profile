@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="逸霖的电影感单页个人作品集：连接科学、商业与传播的跨界创作者。"
+    />
+    <title>Yilin | Cinematic Portfolio</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand magnetic-link" href="#home" aria-label="Back to home">
+        <span class="brand-mark">YL</span>
+        <span class="brand-copy">Yilin</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#home" data-i18n="nav.home">主页</a>
+        <a class="nav-link" href="#about" data-i18n="nav.about">多维切面</a>
+        <a class="nav-link" href="#portfolio" data-i18n="nav.portfolio">作品集</a>
+        <a class="nav-link" href="#contact" data-i18n="nav.contact">联系我</a>
+        <a class="nav-link nav-pill" href="#ask" data-i18n="nav.ask">来问我(AI)</a>
+      </nav>
+
+      <button class="language-switch" type="button" data-lang-toggle aria-label="Switch language">
+        <span data-lang-option="en">EN</span>
+        <i aria-hidden="true"></i>
+        <span data-lang-option="zh" class="is-active">中</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home" aria-label="Hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+
+        <div class="hero-content content-shell">
+          <p class="eyebrow" data-i18n="hero.eyebrow">AI × Science × Storytelling</p>
+          <h1 data-i18n="hero.title">
+            连接科学、商业与传播的跨界创作者：用 AI 探索未来，用故事链接世界。
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            从实验室、董事会议室到舞台聚光灯，把复杂问题翻译成动人的行动。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-cta magnetic-link" href="#about" data-i18n="hero.ctaPrimary">展开多维切面</a>
+            <a class="ghost-cta magnetic-link" href="#ask" data-i18n="hero.ctaSecondary">问问 AI 分身</a>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+          <span></span>
+          <small data-i18n="hero.scroll">向下探索</small>
+        </a>
+
+        <div class="marquee-wrap" aria-label="Profile highlights ticker">
+          <div class="marquee" data-marquee role="list"></div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="content-shell">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="about.eyebrow">Four dimensions</p>
+            <h2 data-i18n="about.title">多维切面</h2>
+            <p data-i18n="about.description">
+              她不是单一标签，而是一组可切换的能力坐标：科研、商业、传播与体验力互相增强。
+            </p>
+          </div>
+
+          <div class="facet-layout">
+            <div class="facet-tabs" role="tablist" aria-label="About facets" data-facet-tabs></div>
+            <article class="facet-panel glass-panel" data-facet-panel>
+              <div class="panel-icon" data-facet-icon>🧪</div>
+              <p class="panel-kicker" data-facet-kicker>AI Maker in Lab</p>
+              <h3 data-facet-title>实验室里的 AI 创客</h3>
+              <p data-facet-body>
+                NUS生物技术硕士/浸会食品科学一级荣誉；5年实验室经验；自学机器学习并融入感官课题；利用AI优化研究所记录。
+              </p>
+              <ul class="stat-list" data-facet-stats></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio-section" id="portfolio">
+        <div class="content-shell">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="portfolio.eyebrow">Selected work</p>
+            <h2 data-i18n="portfolio.title">作品集与多媒体</h2>
+            <p data-i18n="portfolio.description">
+              用优雅网格预留照片、短视频与项目故事，适合后续接入真实媒体资源。
+            </p>
+          </div>
+
+          <div class="portfolio-grid" data-portfolio-grid></div>
+        </div>
+      </section>
+
+      <section class="section ask-section" id="ask">
+        <div class="content-shell ask-layout">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="ask.eyebrow">Ask Yilin AI</p>
+            <h2 data-i18n="ask.title">来问我</h2>
+            <p data-i18n="ask.description">
+              一个预留真实 LLM API 接口的个人 AI 智能体雏形，目前以硬编码人格化问答呈现。
+            </p>
+          </div>
+
+          <section class="chat-terminal glass-panel" aria-label="AI chat terminal">
+            <div class="terminal-bar">
+              <div class="terminal-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p data-i18n="ask.terminalTitle">Yilin_AI / live terminal</p>
+              <span class="terminal-status" data-i18n="ask.status">在线</span>
+            </div>
+            <div class="chat-log" data-chat-log aria-live="polite"></div>
+            <form class="chat-form" data-chat-form>
+              <input
+                type="text"
+                data-chat-input
+                autocomplete="off"
+                data-i18n-placeholder="ask.placeholder"
+                placeholder="试试：她最跨界的经历是什么？"
+                aria-label="Ask Yilin AI"
+              />
+              <button type="submit" data-i18n="ask.send">发送</button>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="content-shell contact-card glass-panel">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Let us connect</p>
+          <h2 data-i18n="contact.title">让科学、商业和故事在同一张桌上发生。</h2>
+          <p data-i18n="contact.description">
+            欢迎聊合作、主持、科研传播、品牌项目，或任何值得跨界解决的复杂问题。
+          </p>
+          <div class="contact-links">
+            <a class="magnetic-link" href="mailto:yilin@example.com">yilin@example.com</a>
+            <a class="magnetic-link" href="#ask" data-i18n="contact.ask">先问 AI 分身</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-label="Portfolio preview">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close preview">×</button>
+      <div class="lightbox-stage">
+        <img data-lightbox-image alt="" />
+        <video data-lightbox-video controls playsinline></video>
+        <div class="lightbox-copy">
+          <p data-lightbox-type></p>
+          <h3 data-lightbox-title></h3>
+          <span data-lightbox-caption></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
