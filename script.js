@@ -44,11 +44,31 @@ const copy = {
       ctaSecondary: "问问 AI 分身",
       scroll: "向下探索",
       marquee: [
-        "NUS生物技术全奖硕士，也能在聚光灯下拿捏双语主持 🧬",
-        "能办500+人的全校晚会，也能为了热爱一个月狂减20斤 🔥",
-        "在辉瑞助力高管拿下MoU，也在蒙牛搞定0预算KOL 💼",
-        "用AI提效科研实验，也用AI写歌上架网易云 🎧",
-        "雅思总分7.5，口语8.5，用双语把复杂故事讲清楚 🌍",
+        {
+          text: "NUS生物技术全奖硕士，也能在聚光灯下拿捏双语主持 🧬",
+          href: "#about",
+          facetIndex: 2,
+        },
+        {
+          text: "能办500+人的全校晚会，也能为了热爱一个月狂减20斤 🔥",
+          href: "#about",
+          facetIndex: 3,
+        },
+        {
+          text: "在辉瑞助力高管拿下MoU，也在蒙牛搞定0预算KOL 💼",
+          href: "#about",
+          facetIndex: 1,
+        },
+        {
+          text: "用AI提效科研实验，也用AI写歌上架网易云 🎧",
+          href: "#about",
+          facetIndex: 0,
+        },
+        {
+          text: "雅思总分7.5，口语8.5，用双语把复杂故事讲清楚 🌍",
+          href: "#about",
+          facetIndex: 2,
+        },
       ],
     },
     about: {
@@ -228,11 +248,31 @@ const copy = {
       ctaSecondary: "Ask my AI twin",
       scroll: "Scroll",
       marquee: [
-        "A fully funded NUS biotech master who can own a bilingual stage 🧬",
-        "She can run a 500+ campus gala and cut 20 jin in a month for what she loves 🔥",
-        "From helping Pfizer executives land an MoU to unlocking zero-budget KOLs at Mengniu 💼",
-        "Using AI to accelerate research experiments, then writing AI songs for NetEase Cloud Music 🎧",
-        "IELTS 7.5 overall, 8.5 speaking — making complex stories land bilingually 🌍",
+        {
+          text: "A fully funded NUS biotech master who can own a bilingual stage 🧬",
+          href: "#about",
+          facetIndex: 2,
+        },
+        {
+          text: "She can run a 500+ campus gala and cut 20 jin in a month for what she loves 🔥",
+          href: "#about",
+          facetIndex: 3,
+        },
+        {
+          text: "From helping Pfizer executives land an MoU to unlocking zero-budget KOLs at Mengniu 💼",
+          href: "#about",
+          facetIndex: 1,
+        },
+        {
+          text: "Using AI to accelerate research experiments, then writing AI songs for NetEase Cloud Music 🎧",
+          href: "#about",
+          facetIndex: 0,
+        },
+        {
+          text: "IELTS 7.5 overall, 8.5 speaking — making complex stories land bilingually 🌍",
+          href: "#about",
+          facetIndex: 2,
+        },
       ],
     },
     about: {
@@ -457,7 +497,12 @@ function renderMarquee() {
   const items = t("hero.marquee");
   const loop = [...items, ...items];
   selectors.marquee.innerHTML = loop
-    .map((item) => `<a class="marquee-item" href="#about" role="listitem">${item}</a>`)
+    .map((item) => {
+      const text = typeof item === "string" ? item : item.text;
+      const href = typeof item === "string" ? "#about" : item.href;
+      const facetAttr = Number.isInteger(item.facetIndex) ? ` data-facet-jump="${item.facetIndex}"` : "";
+      return `<a class="marquee-item" href="${href}" role="listitem"${facetAttr}>${text}</a>`;
+    })
     .join("");
 }
 
@@ -661,6 +706,13 @@ function bindEvents() {
       selectors.navToggle.classList.remove("is-open");
       selectors.navToggle.setAttribute("aria-expanded", "false");
     }
+  });
+
+  selectors.marquee.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-facet-jump]");
+    if (!link) return;
+    const index = Number(link.dataset.facetJump);
+    window.setTimeout(() => renderFacetPanel(index), 180);
   });
 
   selectors.facetTabs.addEventListener("click", (event) => {
