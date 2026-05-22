@@ -447,11 +447,11 @@ function renderPortfolio() {
       (item, index) => `
         <button class="portfolio-card" type="button" data-portfolio-index="${index}" aria-label="${t("portfolio.open")}: ${item.title}">
           <img src="${item.image}" alt="" loading="lazy" />
-          <span class="portfolio-copy">
+          <div class="portfolio-copy">
             <span class="portfolio-type">${item.type}</span>
             <h3>${item.title}</h3>
             <p>${item.caption}</p>
-          </span>
+          </div>
         </button>
       `,
     )
