@@ -18,6 +18,10 @@ const media = {
     "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=84",
   music:
     "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1400&q=84",
+  product:
+    "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1400&q=84",
+  travel:
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84",
   ai:
     "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=84",
   video: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
@@ -44,6 +48,7 @@ const copy = {
         "能办500+人的全校晚会，也能为了热爱一个月狂减20斤 🔥",
         "在辉瑞助力高管拿下MoU，也在蒙牛搞定0预算KOL 💼",
         "用AI提效科研实验，也用AI写歌上架网易云 🎧",
+        "雅思总分7.5，口语8.5，用双语把复杂故事讲清楚 🌍",
       ],
     },
     about: {
@@ -146,47 +151,35 @@ const copy = {
     portfolio: {
       eyebrow: "Selected work",
       title: "作品集与多媒体",
-      description: "用优雅网格预留照片、短视频与项目故事，适合后续接入真实媒体资源。",
+      description: "精选四类最适合展示图片和视频的作品模块：学术海报、短视频制作、产品研发、健身旅游。",
       typeImage: "Image Story",
       typeVideo: "Video Slot",
       open: "点击预览",
       items: [
         {
-          type: "Image Story",
-          title: "科研实验与 AI 工作流",
-          caption: "将机器学习、感官研究与实验室记录系统化，减少重复劳动，释放创造力。",
+          type: "Academic Poster",
+          title: "学术海报",
+          caption: "预留高清海报与研究展示位，可放论文海报、会议展示、实验图表或项目摘要。",
           image: media.science,
         },
         {
-          type: "Image Story",
-          title: "辉瑞政策调研与 MoU 协助",
-          caption: "把医药政策、城市机会与高管沟通素材压缩成清晰可执行的商业语言。",
-          image: media.boardroom,
-        },
-        {
-          type: "Video Slot",
-          title: "双语主持与全英出镜",
-          caption: "预留短视频播放组件位，可替换为真实主持、采访或舞台剪辑。",
+          type: "Video Production",
+          title: "短视频制作",
+          caption: "预留短视频播放组件位，适合放主持剪辑、采访片段、品牌短片或Vlog成片。",
           image: media.stage,
           video: media.video,
         },
         {
-          type: "Image Story",
-          title: "500+ 人主持人大赛",
-          caption: "从招募、内容、舞台到现场节奏，让大型校园活动拥有专业制作质感。",
-          image: media.stage,
+          type: "Product R&D",
+          title: "产品研发",
+          caption: "展示从用户洞察、配方/原型、测试反馈到产品叙事的研发过程与成果。",
+          image: media.product,
         },
         {
-          type: "Image Story",
-          title: "健身与户外体验",
-          caption: "把自律、身体叙事和镜头表达结合成真实的个人品牌资产。",
-          image: media.fitness,
-        },
-        {
-          type: "Image Story",
-          title: "AI 音乐与线上社群",
-          caption: "从全国线上唱歌社团到网易云 AI 音乐人，持续实验内容与技术的新连接。",
-          image: media.music,
+          type: "Fitness & Travel",
+          title: "健身旅游",
+          caption: "把健身蜕变、户外体验和旅行影像放在一起，呈现自律、审美与生命力。",
+          image: media.travel,
         },
       ],
     },
@@ -239,6 +232,7 @@ const copy = {
         "She can run a 500+ campus gala and cut 20 jin in a month for what she loves 🔥",
         "From helping Pfizer executives land an MoU to unlocking zero-budget KOLs at Mengniu 💼",
         "Using AI to accelerate research experiments, then writing AI songs for NetEase Cloud Music 🎧",
+        "IELTS 7.5 overall, 8.5 speaking — making complex stories land bilingually 🌍",
       ],
     },
     about: {
@@ -343,51 +337,37 @@ const copy = {
       eyebrow: "Selected work",
       title: "Portfolio and media",
       description:
-        "An elegant media grid for images, video reels, and project stories, ready for real assets whenever you want to swap them in.",
+        "Four focused modules for image and video storytelling: academic posters, short-video production, product R&D, and fitness travel.",
       typeImage: "Image Story",
       typeVideo: "Video Slot",
       open: "Open preview",
       items: [
         {
-          type: "Image Story",
-          title: "Research experiments and AI workflows",
-          caption:
-            "Systemizing machine learning, sensory research, and lab records to reduce repetition and unlock creative bandwidth.",
+          type: "Academic Poster",
+          title: "Academic Poster",
+          caption: "A high-resolution slot for research posters, conference displays, experimental charts, or project abstracts.",
           image: media.science,
         },
         {
-          type: "Image Story",
-          title: "Pfizer policy research and MoU support",
-          caption:
-            "Compressing healthcare policy, city opportunities, and executive communication into clear business language.",
-          image: media.boardroom,
-        },
-        {
-          type: "Video Slot",
-          title: "Bilingual hosting and English reporting",
-          caption: "A reserved short-video module for real hosting, interview, or stage footage.",
+          type: "Video Production",
+          title: "Short-video Production",
+          caption: "A reserved video module for hosting reels, interview cuts, brand shorts, or finished vlog edits.",
           image: media.stage,
           video: media.video,
         },
         {
-          type: "Image Story",
-          title: "500+ person hosting competition",
+          type: "Product R&D",
+          title: "Product R&D",
           caption:
-            "From recruitment and content to stage flow, creating a campus event with a professional production feel.",
-          image: media.stage,
+            "Show the process from user insight, formula or prototype, testing feedback, to product storytelling.",
+          image: media.product,
         },
         {
-          type: "Image Story",
-          title: "Fitness and outdoor experiences",
-          caption: "Turning discipline, body narrative, and camera language into authentic personal brand assets.",
-          image: media.fitness,
-        },
-        {
-          type: "Image Story",
-          title: "AI music and online community",
+          type: "Fitness & Travel",
+          title: "Fitness Travel",
           caption:
-            "From a nationwide online singing club to NetEase Cloud AI music, constantly testing new links between content and technology.",
-          image: media.music,
+            "Fitness transformation, outdoor experience, and travel imagery come together as discipline, taste, and vitality.",
+          image: media.travel,
         },
       ],
     },

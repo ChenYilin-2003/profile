@@ -22,3 +22,7 @@ python3 -m http.server 8080
 ## 全面探索模块
 
 `script.js` 的 `copy.zh.about.facets` / `copy.en.about.facets` 维护“科研实验、市场运营、商业沟通、多维兴趣”四个入口。每个入口都支持独立详情界面、图片、简介和要点列表。
+
+## 作品集模块
+
+当前作品集固定为四类：学术海报、短视频制作、产品研发、健身旅游。对应中英文内容在 `script.js` 的 `copy.zh.portfolio.items` / `copy.en.portfolio.items` 中维护。
